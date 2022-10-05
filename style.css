@@ -1,0 +1,310 @@
+* {
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0F2027;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0F2027;
+    position: fixed;
+    top:  0px;
+    height: 60px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.nav-item {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Find another color after background color is sorted */
+a {
+    text-decoration: none;
+    color:white;
+}
+
+/* Need to find a different color scheme then black on purple */
+a:hover {
+    color: #63acca;
+}
+
+/* drop set */
+.backdrop {
+    z-index: -2;
+    width: 100%;
+    position: fixed;
+    margin-top: -100px;
+}
+
+/* Need to look into CSS tricks for something different */
+.showfeats {
+    z-index: 1;
+    height: 19em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+
+.show-tiles {
+    border-radius: 10px;
+    background-image:linear-gradient(#0F2027, #203A43, #2C5364)
+    
+}
+
+/* background-color needs to be updated -- CSS MAGIC needs to happen still  */
+.show-header {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+    height: 100%;
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+
+}
+
+/* Events grid container */
+.event-tile-dimension {
+
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns:  auto auto;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "header header";
+}
+
+/* sets grid item 1 to header */
+.event-grid-item-1 {
+    grid-area: header;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Items flexbox */
+.event-item-lg-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: baseline;
+    border-radius: 10px;
+    
+}
+
+.event-grid-item-2 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.event-item-sm-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+   
+
+.event-img-g_item {
+    display: flex;
+    align-self: center;
+    margin: 20px;   
+}
+
+.event-info-item {
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+/* .event-name-item {
+   
+}
+
+.event-description-item {
+    
+} */
+
+.event-button-1 {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+
+.event-img-g_item-2 {
+    display: flex;
+    align-self: center;
+    
+}
+
+.event-info-item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+}
+
+.purchase-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.purchase-image {
+    display: flex;
+    align-self: flex-start;
+    margin: 20px;
+    padding-right: 40px;
+
+}
+
+.purchase-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.event-title {
+    text-decoration: underline;
+}
+
+
+.event-month-year {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+    height: 100%;
+    margin-bottom: 10px;
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+
+}
+
+/*  */
+.event-date-tickets {
+    display: grid;
+    grid-auto-rows: auto;
+    align-items: center;
+}
+
+.event-purchase {
+    display: flex;
+    justify-self: center;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: #203A43;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.map {
+    width: 250px;
+    padding: 2px;
+    padding-left: 100px;
+}
+
+.mapimg {
+    width: 250px;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.footshows {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+.tiny {
+    margin: 3px;
+}
